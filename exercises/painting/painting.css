@@ -1,0 +1,43 @@
+
+    
+    /* inspired by https://css-tricks.com/the-shapes-of-css/ */
+
+    .container {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+    }
+
+    #yellow_diamond {
+        width: 0;
+        height: 0;
+        border: 50px solid transparent;
+        border-bottom-color: palegoldenrod;
+        position: relative;
+        top: -50px;
+        grid-row: 0/1;
+        grid-column: 3/4;
+      }
+
+    #yellow_diamond:after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 50px;
+        width: 0;
+        height: 0;
+        border: 50px solid transparent;
+        border-top-color: palegoldenrod;
+      }
+
+    #diag_line{
+        position: fixed;
+        width:50px;
+        height:5px;
+        background-color: black;
+        transform: rotate(45deg);
+        grid-row:1/2;
+        grid-column: 1/2;
+    }
+
+    
