@@ -1,0 +1,30 @@
+#piano{
+    width:150px;
+    height:150px;
+    background-color:black;
+}
+
+.keygrid {
+    display: grid;
+    height:100px;
+    margin-top:50px;
+    grid-template-rows: 100%;
+    grid-template-columns: 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76%;
+    border: solid black;
+    border-width: 1px;
+    border-right: none;
+}
+
+.whitekey{
+    position:relative;
+    border-right: solid black;
+    border-width: 1px;
+}
+
+.blackkey{
+    position: relative;
+    height:62.5%;
+    width:75%;
+    margin-left:62.5%;
+    background-color:black;
+}
