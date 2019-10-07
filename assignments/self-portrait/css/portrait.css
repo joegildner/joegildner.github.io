@@ -9,6 +9,17 @@ Self Portrait
     grid-template-columns: 33% 33% 33%;
 }
 
+#reflect{
+    grid-row:3;
+    grid-column:2;
+    transform: translateY(50%);
+ }
+ 
+ #reflect p{
+     justify-self: center;
+     align-self: end;
+ }
+
 #door{
     grid-row: 1;
     grid-column: 2;
@@ -137,4 +148,23 @@ Self Portrait
     width:75%;
     margin-left:62.5%;
     background-color:black;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1em;
+}
+
+body.paper{
+    max-width: 720px;
 }
