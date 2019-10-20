@@ -16,7 +16,8 @@
   flex-direction: column;
 }
 
-#icons{
+#icons a:hover img{
+  filter: brightness(70%) sepia(100%) saturate(600%);
 
 }
 

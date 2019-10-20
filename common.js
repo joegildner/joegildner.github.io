@@ -8,8 +8,7 @@ var GV = {}; // Global Variable object, nicely wraps up all my js globals.
 GV.logo = "Joe Gildner"
 
 GV.nav = {  'Home':'/',
-            'Experience':'/experience/index.html',
-            'Code Samples':'/code/dynamic-webpages/index.html', 
+            'Competencies':'/competencies/index.html',
             'About':'/about/index.html'};
 
 $(function(){
@@ -28,14 +27,14 @@ $(function(){
     gitIcon.setAttribute("href","https://github.com/joegildner/");
     gitIcon.setAttribute("target","_blank");
     var gitPic = document.createElement("img");
-    gitPic.setAttribute("src","img/git_dark.png");
+    gitPic.setAttribute("src","/img/git_dark.png");
     gitIcon.append(gitPic);
 
     var linkedIcon = document.createElement("a");
     linkedIcon.setAttribute("href","https://www.linkedin.com/in/joegildner/");
     linkedIcon.setAttribute("target","_blank");
     var linkedPic = document.createElement("img");
-    linkedPic.setAttribute("src","img/linkedin_dark.png");
+    linkedPic.setAttribute("src","/img/linkedin_dark.png");
     linkedIcon.append(linkedPic);
 
     navLeft.append(logo,gitIcon,linkedIcon);

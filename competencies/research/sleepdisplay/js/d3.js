@@ -13,7 +13,7 @@ function ascending(a, b) {
 
 function bisector(compare) {
   if (compare.length === 1) compare = ascendingComparator(compare);
-  return {
+  return { 
     left: function(a, x, lo, hi) {
       if (lo == null) lo = 0;
       if (hi == null) hi = a.length;
