@@ -44,7 +44,7 @@ function initMap() {
     };
     
     for (var i = 0; i < 5; i++) {
-        var thisfloor = new google.maps.GroundOverlay("img/CF-" + i + ".png", imageBounds)
+        var thisfloor = new google.maps.GroundOverlay("assignments/mobile-site/img/CF-" + i + ".png", imageBounds)
         thisfloor.addListener('click', function (d) {
         })
         floors.push(thisfloor);
@@ -52,8 +52,8 @@ function initMap() {
     }
     
     
-    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(setControls(downFloor, "../img/downstairs.png","down"));
-    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(setControls(upFloor, "../img/upstairs.png","up"));
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(setControls(downFloor, "assignments/mobile-site/img/downstairs.png","down"));
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(setControls(upFloor, "assignments/mobile-site/img/upstairs.png","up"));
     
     floors[currFloor].setMap(map);
 }
@@ -144,10 +144,9 @@ function highlightRoom(){
 function createOverlay(){
     if(searchRoomMarker == undefined){
         var latLng = new google.maps.LatLng(searchRoom.lat, searchRoom.lng);
-        console.log(searchRoom);
         
         var image = new google.maps.MarkerImage(
-            "../img/activeRoom.png",
+            "assignments/mobile-site/img/activeRoom.png",
             null, // size
             null, // origin
             new google.maps.Point( 15, 15 ), // anchor (move to center of marker)
@@ -170,5 +169,12 @@ function createOverlay(){
     
     function hideOverlay(){
         if(searchRoomMarker != undefined) searchRoomMarker.setMap(null);
+    }
+
+    function reset(){
+        hideOverlay();
+        searchRoomMarker = undefined;
+        searchFloor = undefined;
+        searchRoom = undefined;
     }
         
