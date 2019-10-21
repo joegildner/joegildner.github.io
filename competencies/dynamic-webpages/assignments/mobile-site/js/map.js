@@ -56,27 +56,6 @@ function initMap() {
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(setControls(upFloor, "../img/upstairs.png","up"));
     
     floors[currFloor].setMap(map);
-    
-    // Try HTML5 geolocation.
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var pos = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            };
-            
-            var marker = new google.maps.Marker({
-                position: pos,
-                icon: '../img/location2.png',
-                map: map
-            });
-        }, function () {
-            handleLocationError(true, infoWindow, map.getCenter());
-        });
-    } else {
-        // Browser doesn't support Geolocation
-        handleLocationError(false, infoWindow, map.getCenter());
-    }
 }
 
 function setControls(callbackFnc, img, name, spacing) {
