@@ -3,8 +3,7 @@
  @media(min-width:320px) {
     #map {
         width: 100%;  /* The width is the width of the web page */
-        height: 80vh;
-        padding-top:80%;
+        height: 60vh;
         margin: 0 10px;
     }
 }
@@ -93,4 +92,23 @@ html, body{
 nav a.navbar-brand{
     font-family: 'Roboto', Courier, monospace;
     font-size:2em;
+}
+
+h2{
+    font-size: 1.5em;
+    margin: 10px 10px;
+}
+
+div#labs{
+    margin: 10px 10px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div#labs button{
+    margin: 0 5px;
+}
+
+button#reset{
+    margin:0 15px;
 }
