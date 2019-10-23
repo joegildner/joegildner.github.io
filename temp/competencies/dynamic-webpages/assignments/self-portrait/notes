@@ -1,0 +1,5 @@
+for name in 203*
+do
+    newname="$(echo "$name" | cut -c22-)"
+    mv $name $newname
+done

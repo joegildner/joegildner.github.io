@@ -1,0 +1,266 @@
+{"user_id":"JBCmPz3AxnfzcpXjIyIbAQ8SlWI2",
+  "sleep": [
+    {
+      "dateOfSleep": "2018-04-23",
+      "duration": 9000000,
+      "efficiency": 95,
+      "endTime": "2018-04-23T15:12:30.000",
+      "infoCode": 2,
+      "levels": {
+        "data": [
+          {
+            "dateTime": "2018-04-23T12:42:00.000",
+            "level": "asleep",
+            "seconds": 4200
+          },
+          {
+            "dateTime": "2018-04-23T13:52:00.000",
+            "level": "awake",
+            "seconds": 120
+          },
+          {
+            "dateTime": "2018-04-23T13:54:00.000",
+            "level": "asleep",
+            "seconds": 180
+          },
+          {
+            "dateTime": "2018-04-23T13:57:00.000",
+            "level": "awake",
+            "seconds": 240
+          },
+          {
+            "dateTime": "2018-04-23T14:01:00.000",
+            "level": "asleep",
+            "seconds": 1860
+          },
+          {
+            "dateTime": "2018-04-23T14:32:00.000",
+            "level": "awake",
+            "seconds": 120
+          },
+          {
+            "dateTime": "2018-04-23T14:34:00.000",
+            "level": "restless",
+            "seconds": 60
+          },
+          {
+            "dateTime": "2018-04-23T14:35:00.000",
+            "level": "awake",
+            "seconds": 2220
+          }
+        ],
+        "summary": {
+          "asleep": {
+            "count": 0,
+            "minutes": 104
+          },
+          "awake": {
+            "count": 4,
+            "minutes": 45
+          },
+          "restless": {
+            "count": 1,
+            "minutes": 1
+          }
+        }
+      },
+      "logId": 17989340163,
+      "minutesAfterWakeup": 40,
+      "minutesAsleep": 104,
+      "minutesAwake": 6,
+      "minutesToFallAsleep": 0,
+      "startTime": "2018-04-23T12:42:00.000",
+      "timeInBed": 150,
+      "type": "classic"
+    },
+    {
+      "dateOfSleep": "2018-04-21",
+      "duration": 5640000,
+      "efficiency": 90,
+      "endTime": "2018-04-21T18:30:00.000",
+      "infoCode": 2,
+      "levels": {
+        "data": [
+          {
+            "dateTime": "2018-04-21T16:55:30.000",
+            "level": "asleep",
+            "seconds": 2280
+          },
+          {
+            "dateTime": "2018-04-21T17:33:30.000",
+            "level": "restless",
+            "seconds": 120
+          },
+          {
+            "dateTime": "2018-04-21T17:35:30.000",
+            "level": "asleep",
+            "seconds": 1080
+          },
+          {
+            "dateTime": "2018-04-21T17:53:30.000",
+            "level": "restless",
+            "seconds": 300
+          },
+          {
+            "dateTime": "2018-04-21T17:58:30.000",
+            "level": "asleep",
+            "seconds": 1620
+          },
+          {
+            "dateTime": "2018-04-21T18:25:30.000",
+            "level": "restless",
+            "seconds": 120
+          },
+          {
+            "dateTime": "2018-04-21T18:27:30.000",
+            "level": "asleep",
+            "seconds": 120
+          }
+        ],
+        "summary": {
+          "asleep": {
+            "count": 0,
+            "minutes": 85
+          },
+          "awake": {
+            "count": 0,
+            "minutes": 0
+          },
+          "restless": {
+            "count": 3,
+            "minutes": 9
+          }
+        }
+      },
+      "logId": 17967690036,
+      "minutesAfterWakeup": 0,
+      "minutesAsleep": 85,
+      "minutesAwake": 9,
+      "minutesToFallAsleep": 0,
+      "startTime": "2018-04-21T16:55:30.000",
+      "timeInBed": 94,
+      "type": "classic"
+    },
+    {
+      "dateOfSleep": "2018-04-16",
+      "duration": 7140000,
+      "efficiency": 93,
+      "endTime": "2018-04-16T19:21:30.000",
+      "infoCode": 2,
+      "levels": {
+        "data": [
+          {
+            "dateTime": "2018-04-16T17:22:30.000",
+            "level": "restless",
+            "seconds": 60
+          },
+          {
+            "dateTime": "2018-04-16T17:23:30.000",
+            "level": "asleep",
+            "seconds": 120
+          },
+          {
+            "dateTime": "2018-04-16T17:25:30.000",
+            "level": "restless",
+            "seconds": 120
+          },
+          {
+            "dateTime": "2018-04-16T17:27:30.000",
+            "level": "asleep",
+            "seconds": 1320
+          },
+          {
+            "dateTime": "2018-04-16T17:49:30.000",
+            "level": "restless",
+            "seconds": 60
+          },
+          {
+            "dateTime": "2018-04-16T17:50:30.000",
+            "level": "asleep",
+            "seconds": 60
+          },
+          {
+            "dateTime": "2018-04-16T17:51:30.000",
+            "level": "restless",
+            "seconds": 180
+          },
+          {
+            "dateTime": "2018-04-16T17:54:30.000",
+            "level": "asleep",
+            "seconds": 3540
+          },
+          {
+            "dateTime": "2018-04-16T18:53:30.000",
+            "level": "restless",
+            "seconds": 60
+          },
+          {
+            "dateTime": "2018-04-16T18:54:30.000",
+            "level": "asleep",
+            "seconds": 1620
+          }
+        ],
+        "summary": {
+          "asleep": {
+            "count": 0,
+            "minutes": 111
+          },
+          "awake": {
+            "count": 0,
+            "minutes": 0
+          },
+          "restless": {
+            "count": 5,
+            "minutes": 8
+          }
+        }
+      },
+      "logId": 17913685880,
+      "minutesAfterWakeup": 0,
+      "minutesAsleep": 111,
+      "minutesAwake": 8,
+      "minutesToFallAsleep": 0,
+      "startTime": "2018-04-16T17:22:30.000",
+      "timeInBed": 119,
+      "type": "classic"
+    },
+    {
+      "dateOfSleep": "2018-04-14",
+      "duration": 12660000,
+      "efficiency": 100,
+      "endTime": "2018-04-14T18:43:30.000",
+      "infoCode": 1,
+      "levels": {
+        "data": [
+          {
+            "dateTime": "2018-04-14T15:12:00.000",
+            "level": "asleep",
+            "seconds": 12660
+          }
+        ],
+        "summary": {
+          "asleep": {
+            "count": 0,
+            "minutes": 211
+          },
+          "awake": {
+            "count": 0,
+            "minutes": 0
+          },
+          "restless": {
+            "count": 0,
+            "minutes": 0
+          }
+        }
+      },
+      "logId": 17890404113,
+      "minutesAfterWakeup": 0,
+      "minutesAsleep": 211,
+      "minutesAwake": 0,
+      "minutesToFallAsleep": 0,
+      "startTime": "2018-04-14T15:12:00.000",
+      "timeInBed": 211,
+      "type": "classic"
+    }
+  ]
+}
