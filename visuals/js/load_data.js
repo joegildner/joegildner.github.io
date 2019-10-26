@@ -32,13 +32,13 @@ var ndvjson = [];
 var loadData = [];
 
 for(var i=0; i<ndv.length; i++){
-    loadData.push(d3.json("/sleep/"+ndv[i]+".json").then(function(obj){
+    loadData.push(d3.json("sleep/"+ndv[i]+".json").then(function(obj){
         ndvjson.push(obj)
     }));
 }
 
 for(var i=0; i<ntp.length; i++){
-    loadData.push(d3.json("/sleep/"+ntp[i]+".json").then(function(obj){
+    loadData.push(d3.json("sleep/"+ntp[i]+".json").then(function(obj){
         ntpjson.push(obj);
     }));
 }
