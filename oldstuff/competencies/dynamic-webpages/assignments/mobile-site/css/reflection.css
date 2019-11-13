@@ -1,0 +1,61 @@
+div.content-wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom:300px;
+}
+
+div.content-wrapper h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+div.content-wrapper p{
+    padding-top:30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 130%;
+}
+div.thoughts{
+    display: flex;
+    flex-direction: row;
+    width:70%;
+    margin: 0 auto;
+    
+}
+div.thoughts p{
+    font-style: italic;
+    color:darkcyan;
+    width: 200px;
+    height:70%;
+    padding:20px 20px;
+    align-self: flex-start;
+}
+
+div.thoughts p:nth-last-child(2){
+    font-style: italic;
+    color:darkcyan;
+    width: 200px;
+}
+
+div.thoughts img{
+    margin:0 auto;
+    padding: 20px 20px;
+}
+
+div.content-wrapper img.right{
+    float:right;
+    height:150px;
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+div.content-wrapper img.left{
+    float:left;
+    height:480px;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
