@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {font-size: 60px;
+            text-align: center;
+        }   
+        
+        span { color: red;
+        }
+
+        span.good{
+            color: green;
+        }
+        span.neutral{
+            color: black;
+        }
+        
+    </style>    
+</head>    
+
+
+<body>
+    
+    <p>Mary has <span id = "FruitCount" ></span> pieces of fruit, <span id = "AppleCount" ></span> apples, and <span id = "BananaCount" ></span> banana.</p>
+    
+    
+    <p> Mary eats <span>1</span> apple, a <span id = "EatenApple" ></span>. <br> She now has <span id = "SecondAppleCount" ></span> apples and a total of <span id = "SecondFruitCount" ></span>  fruits.</p>
+    
+    <p> Mary has has the following apples: <span id = "AppleLoop" ></span> </p>
+    <p> Mary has has the following bananas: <span id = "BananaLoop" ></span> </p>
+
+    <p> Mary goes to the market and sees <span class="neutral" id = "MarketLoop" ></span> </p>
+
+
+    
+    
+    
+    
+    <script>
+        
+        // the value of the variables are arrays
+        
+        var apples = ["Fuji", "Red Delicious", "Honeycrisp", "Granny Smith"];
+        var bananas = ["Cavendish", "Lady's Finger", "Red Bananas"];
+        var market = [{name:"Blood Orange",quality:0},
+        {name:"Navel Orange",quality:1},
+        {name:"Nectarine",quality:1},
+        {name:"Satsuma",quality:0},
+        {name:"Lemon",quality:1}];
+        
+        // the concat() method joins two or more arrays
+        var fruits = apples.concat(bananas);
+        
+        // the output is the total number of elements within the array, i.e. bananas.length = 3
+        
+        document.getElementById("BananaCount").innerHTML = bananas.length;
+        document.getElementById("AppleCount").innerHTML = apples.length;
+        document.getElementById("FruitCount").innerHTML = fruits.length;
+        
+        // the shift() method removes the first array element, ie the "Fuji" apple. 
+        
+        document.getElementById("EatenApple").innerHTML = apples.shift();
+        
+        fruits.shift();
+        
+        document.getElementById("SecondAppleCount").innerHTML = apples.length;
+        document.getElementById("SecondFruitCount").innerHTML = fruits.length;
+        
+        apples.forEach((apple,i) => {
+            if(i<apples.length-1){
+                document.getElementById("AppleLoop").innerHTML = document.getElementById("AppleLoop").innerHTML + apple +", ";
+            }else{
+                document.getElementById("AppleLoop").innerHTML = document.getElementById("AppleLoop").innerHTML + "and "+ apple +".";
+            }
+        })
+        
+        bananas.forEach((banana,i) => {
+            if(i<apples.length-1){
+                document.getElementById("BananaLoop").innerHTML = document.getElementById("BananaLoop").innerHTML + banana +", ";
+            }else{
+                document.getElementById("BananaLoop").innerHTML = document.getElementById("BananaLoop").innerHTML + "and "+ banana +".";
+            }
+        })
+
+        market.forEach((fruit)=>{
+            quality = fruit.quality==1?"good":"";
+            document.getElementById("MarketLoop").innerHTML = document.getElementById("MarketLoop").innerHTML + "<span class=\""+quality+"\">"+fruit.name+"</span>, ";
+        })
+        
+    </script>
+    
+</body>
+</html>
